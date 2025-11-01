@@ -2,7 +2,7 @@
 
 Proyek ini mengimplementasikan **Graph Convolutional Network (GCN)** untuk tugas **Node Classification** menggunakan dataset **Cora**.
 
-## 📋 Fitur Utama
+## Fitur Utama
 
 ✅ **Model GCN 2-layer** dengan PyTorch Geometric  
 ✅ **Early Stopping** dengan patience 10 epoch  
@@ -12,7 +12,7 @@ Proyek ini mengimplementasikan **Graph Convolutional Network (GCN)** untuk tugas
 ✅ **Confusion Matrix & Classification Report**  
 ✅ **Modular & Extensible** - mudah diganti ke GAT/GraphSAGE  
 
-## 🗂️ Struktur Folder
+## Struktur Folder
 
 ```
 Graph Neural Network/
@@ -29,7 +29,7 @@ Graph Neural Network/
 └── README.md
 ```
 
-## 📦 Instalasi Dependencies
+## Instalasi Dependencies
 
 ### Requirement:
 ```bash
@@ -41,7 +41,7 @@ pip install matplotlib scikit-learn numpy
 
 **Catatan**: Sesuaikan versi PyTorch dan CUDA dengan sistem Anda.
 
-## 🚀 Cara Menggunakan
+## Cara Menggunakan
 
 1. **Buka notebook**: `notebook/notebook.ipynb`
 2. **Jalankan semua cell** secara berurutan
@@ -51,7 +51,7 @@ pip install matplotlib scikit-learn numpy
    - Simpan model terbaik
    - Generate visualisasi
 
-## 📊 Dataset Cora
+## Dataset Cora
 
 - **Nodes**: 2,708 scientific publications
 - **Edges**: 10,556 citation links
@@ -68,7 +68,7 @@ pip install matplotlib scikit-learn numpy
 6. Rule_Learning
 7. Theory
 
-## 🏗️ Arsitektur Model
+## Arsitektur Model
 
 ```
 GCN(
@@ -101,7 +101,7 @@ GCN(
 
 *Hasil dapat bervariasi karena inisialisasi random*
 
-## 🎯 Output Files
+## Output Files
 
 Setelah training selesai, file berikut akan disimpan di folder `model/`:
 
@@ -141,7 +141,7 @@ class GraphSAGE(torch.nn.Module):
 
 Kemudian ganti inisialisasi model di notebook.
 
-## 📝 Code Highlights
+## Code Highlights
 
 ### Training dengan Early Stopping
 ```python
@@ -164,7 +164,7 @@ tsne = TSNE(n_components=2, random_state=42)
 embeddings_2d = tsne.fit_transform(embeddings.cpu().numpy())
 ```
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 ### Error: CUDA out of memory
 - Gunakan CPU: `device = torch.device('cpu')`
@@ -178,13 +178,13 @@ embeddings_2d = tsne.fit_transform(embeddings.cpu().numpy())
 - Download manual dari [Cora Dataset](https://linqs.soe.ucsc.edu/data)
 - Letakkan di folder `dataset/Cora/`
 
-## 📚 Referensi
+## Referensi
 
 - **PyTorch Geometric**: https://pytorch-geometric.readthedocs.io/
 - **GCN Paper**: [Semi-Supervised Classification with Graph Convolutional Networks](https://arxiv.org/abs/1609.02907)
 - **Cora Dataset**: https://linqs.soe.ucsc.edu/data
 
-## 👨‍💻 Author
+## Author
 
 Created for Graph Neural Network learning project.
 
@@ -194,4 +194,4 @@ MIT License - Free to use and modify.
 
 ---
 
-**Happy Learning! 🎓**
+**Happy Learning! **
